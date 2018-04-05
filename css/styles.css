@@ -1,0 +1,50 @@
+article {
+	min-height: 20em;
+	width: 50%;
+	margin: 0 auto 0 auto;
+}
+
+[data-theme] { display: table; }
+
+[data-theme] figure {
+	display: table-cell;
+	position: relative;
+	background-position: center center;
+	background-size: cover;
+}
+
+[data-theme] figcaption {
+	position: absolute;
+	background: red;
+	top: -9999%;
+}
+
+[data-theme] {display: table;}
+
+[data-theme="Page 1"] figure { background-image: url(image1.jpg); }
+
+[data-theme="Page 1"] figcaption:nth-child(1) { top: 50%; left: 50%; }
+
+[data-theme="Page 2"] figure { background-image: url(image2.jpg); }
+
+[data-theme="Page 2"] figcaption:nth-child(2) { top: 25%; left: 75%; }
+
+[data-theme="Page 3"] figure { background-image: url(image3.jpg); }
+
+[data-theme="Page 3"] figcaption:nth-child(3) { top: 75%; left: 25%; }
+
+[data-theme] nav{
+display: table-cell;
+width: 50%;
+}
+
+[data-theme] nav a{
+display: block;
+color: #000;
+border: 1px solid;
+}
+
+[data-theme] nav a:hover{
+background: rgba(0,0,0,.5);
+color: #fff;
+}
